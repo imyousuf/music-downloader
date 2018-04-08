@@ -118,8 +118,8 @@
     "source": "src/**/*.js"
   },
   "markupProcessor": {
-    "id": "none",
-    "displayName": "None",
+    "id": "maximum",
+    "displayName": "Maximum Minification",
     "fileExtension": ".html",
     "source": "src/**/*.html"
   },
@@ -134,8 +134,9 @@
     "displayName": "Visual Studio Code"
   },
   "unitTestRunner": {
-    "id": "none",
-    "displayName": "None"
+    "id": "karma",
+    "displayName": "Karma",
+    "source": "test/unit/**/*.js"
   },
   "paths": {
     "root": "src",
@@ -144,5 +145,9 @@
     "attributes": "resources/attributes",
     "valueConverters": "resources/value-converters",
     "bindingBehaviors": "resources/binding-behaviors"
+  },
+  "testFramework": {
+    "id": "jasmine",
+    "displayName": "Jasmine"
   }
 }
