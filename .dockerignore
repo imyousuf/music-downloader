@@ -1,0 +1,14 @@
+custom-scripts/*
+vendor/*
+web/music-downloader/node_modules/*
+web/music-downloader/scripts/*
+web/music-downloader/.vscode/*
+dist/*
+music-downloader.cfg
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+*docker-helper-config
+*dockerignore
+*gitignore
+*git

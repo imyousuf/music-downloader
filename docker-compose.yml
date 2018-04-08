@@ -1,0 +1,21 @@
+music-dwnldr-mysql:
+  image: mysql:5.7
+  container_name: music_dwnldr_dev_mysql
+  environment:
+    MYSQL_DATABASE: music_dwnldr
+    MYSQL_ROOT_PASSWORD: qwe909qwe
+    MYSQL_USER: admin
+    MYSQL_PASSWORD: zxc909zxc
+
+music-downloader:
+  image: imyousuf/music-downloader:latest
+  links:
+    - music-dwnldr-mysql:mysql
+  ports:
+    - "10080:8080"
+  volumes:
+    - ./main.go:/go/src/github.com/imyousuf/music-downloader/main.go
+    - ./Makefile:/go/src/github.com/imyousuf/music-downloader/Makefile
+    - ./app:/go/src/github.com/imyousuf/music-downloader/app/
+    - ./web:/go/src/github.com/imyousuf/music-downloader/web/
+    - ~/Pictures/:/path/to/images_dir

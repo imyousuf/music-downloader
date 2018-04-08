@@ -1,0 +1,21 @@
+[database]
+dialect=mysql
+connection_url=admin:zxc909zxc@tcp(mysql:3306)/music_dwnldr?charset=utf8&parseTime=True
+
+[http]
+listener=:8080
+read_timeout=240
+write_timeout=240
+static_file_dir=web/img-mngr/
+
+[library]
+library_root=/path/to/images_dir
+support_png=true
+
+# Log configuration is optional
+[log]
+filename=/var/log/golang-url-shortener.log
+max_file_size_in_mb=200
+max_backups=3
+max_age_in_days=28
+compress_backups=true

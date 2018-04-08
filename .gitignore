@@ -1,0 +1,32 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Build dirs
+dist/
+
+# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+.glide/
+
+# mac hidden files
+.DS_Store
+
+# Sqlite specific files
+*\.sqlite*
+
+# Using `dep` so ignoring vendor dir
+vendor/
+
+# Project binaries
+music-downloader
+music-downloader.cfg
+custom-scripts/
+docker-compose.override.yml
